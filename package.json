@@ -1,26 +1,20 @@
 {
-  "name": "webcrawlerhttp",
+  "name": "seo-link-analyzer",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "SEO link analyzer",
+  "type": "module",
   "scripts": {
     "start": "node main.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abhoy009/webcrawlerhttp.git"
+  "jest": {
+    "transform": {}
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/abhoy009/webcrawlerhttp/issues"
-  },
-  "homepage": "https://github.com/abhoy009/webcrawlerhttp#readme",
+  "author": "wagslane",
   "devDependencies": {
     "jest": "^29.7.0"
   },
   "dependencies": {
-    "jsdom": "^25.0.1"
+    "jsdom": "^24.0.0"
   }
 }
